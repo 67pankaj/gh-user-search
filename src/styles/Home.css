@@ -1,0 +1,227 @@
+#home-comp {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-bar {
+  display: flex;
+  padding: 8px 12px;
+  margin: 16px;
+  width: calc(100% - 32px);
+  max-width: 480px;
+  border-radius: 1000vw;
+  background-color: #fff;
+  box-shadow: -1px 2px 4px 1px rgba(0,0,0, 0.2);
+}
+#search-input {
+  border: none;
+  flex: 1;
+  margin: 0 8px;
+}
+#search-input:focus, #search-btn:focus {
+  outline: none;
+}
+
+#search-btn {
+  background-color: #efa00b;
+  background-color: #0267c1;
+  color: #eee;
+  border: none;
+  border-radius: 1000vw;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  padding: 4px 16px;
+  margin: -8px -12px -8px 0;
+}
+
+/* usercard styles */
+.user-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: -1px 2px 4px 1px rgba(0,0,0, 0.2);
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  margin: 16px;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+}
+.user-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 1px 2px 5px 2px rgba(0,0,0, 0.2);
+}
+.header-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 0 8px;
+}
+.card-info {
+  margin-top: 8px;;
+}
+.card-info-line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.card-info-line-icon {
+  margin-right: 8px;
+}
+.profile-link {
+  padding: 4px 8px;
+  color: #0267c1;
+  border: 1px solid #0267c1;
+  border-radius: 1000vw;
+  text-decoration: none;
+}
+
+/* result section styles */
+.result-section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.response-state-container {
+  display: inline-flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+}
+.user-details {
+  display: flex;
+  flex-direction: column;
+}
+.info-tiles-container {
+  display: flex;
+  padding: 0 16px;
+}
+
+.repo-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+}
+
+/* repo-tile styles */
+.repo-tile {
+  display: inline-flex;
+  padding: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 1px 2px 4px 1px rgba(0,0,0, 0.2);
+  margin: 0 16px 8px;
+}
+.repo-info {
+  flex: 1;
+  display: inline-flex;
+  flex-direction: column;
+}
+.repo-stats {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 16px;
+  font-size: 0.9rem;
+}
+.repo-link {
+  margin-bottom: 8px;
+}
+.repo-link, 
+.repo-link:visited, 
+.repo-link:active, 
+.repo-link:focus,
+.repo-link:hover {
+  color: #0267c1;
+  text-decoration: none;
+}
+.repo-tile-star {
+  color: #0267c1;
+}
+.star-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* info-tile styles */
+.info-tile {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: -1px 2px 4px 2px rgba(0,0,0, 0.2);
+}
+.info-tile:first-of-type {
+  margin-right: 16px;
+}
+.info-tile-icon {
+  padding: 8px;
+  border-radius: 50%;
+}
+.info-tile-icon.follow_color {
+  background-color: #aed9fe;
+  color: #0267c1;
+}
+.info-tile-icon.repo_color {
+  background-color: #fad3c7;
+  color: #ec4e20;
+}
+.info-tile-content {
+  flex: 1 0 auto;
+  margin: 0 8px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+.info-tile-data {
+  font-size: 1.2rem;
+}
+
+/* error comp styles */
+#error-comp {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.notfound {
+  display: flex;
+  align-items: baseline;
+}
+.back-home {
+  padding: 4px 12px;
+  background-color: #0267c1;
+  color: #fff;
+  border-radius: 1000vw;
+}
+
+@media screen and (min-width: 680px) {
+  .user-card {
+    margin: 0 0 0 16px;
+  }
+  .user-details {
+    flex-direction: row;
+  }
+  .info-tiles-container {
+    flex-direction: column;
+  }
+  .info-tile:first-of-type {
+    margin: 0;
+    margin-bottom: 16px;
+  }
+}
